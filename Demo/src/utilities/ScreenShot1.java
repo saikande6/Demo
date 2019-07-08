@@ -22,7 +22,7 @@ public class ScreenShot1
 				
 				
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C:\\Users\\Ravi Kanth\\Desktop\\pic1.jpeg"));
+		FileUtils.copyFile(src, new File("C:\\Users\\ramer\\Desktop\\pic1.jpeg"));
 		
 		
 		//File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

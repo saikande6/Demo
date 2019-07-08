@@ -25,7 +25,7 @@ public class ScreenShot2
 		if(links.size()==0)
 		{
 			File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(scrFile, new File("C:\\Users\\Ravi Kanth\\Desktop\\google.png"));
+			FileUtils.copyFile(scrFile, new File("C:\\Users\\ramer\\Desktop\\google.png"));
 		}
 	}
 }

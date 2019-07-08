@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dropdowns.DropdownTesting1">
+      <class name="utilities.MouseOperations">
         <methods>
-          <include name="Dropdown"/>
-          <include name="Dropdown2"/>
+          <include name="autoSuggestion"/>
           <include name="setup"/>
-          <include name="teardown"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- dropdowns.DropdownTesting1 -->
+      </class> <!-- utilities.MouseOperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
