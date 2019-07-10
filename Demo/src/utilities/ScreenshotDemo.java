@@ -40,7 +40,7 @@ WebDriver driver;
 		File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
 		//FileUtils is a predefined class in java & copyFile is a predefined method
-		FileUtils.copyFile(scrFile,new File("C:\\Users\\Ravi Kanth\\Desktop\\"+dateFormat.format(dt)+".png"));
+		FileUtils.copyFile(scrFile,new File("C:\\Users\\ramer\\Desktop\\"+dateFormat.format(dt)+".png"));
 	}
 	
 	@AfterMethod

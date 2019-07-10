@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="utilities.MouseOperations">
+      <class name="utilities.MultipleWindowsClass">
         <methods>
-          <include name="autoSuggestion"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="testMultipleWindows"/>
         </methods>
-      </class> <!-- utilities.MouseOperations -->
+      </class> <!-- utilities.MultipleWindowsClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

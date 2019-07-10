@@ -2,10 +2,12 @@ package utilities;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -19,7 +21,7 @@ public class windowsHandle {
 		  WebDriver driver=new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().deleteAllCookies();
-		  //driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); 
+		  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); 
 		  WebDriverWait wait=new WebDriverWait(driver, 60);
 		  driver.get("http://www.hdfcbank.com/");
 		  
@@ -51,8 +53,9 @@ public class windowsHandle {
 		  //Thread.sleep(6000);
 	
 		  driver.manage().window().maximize();
-		//wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//a[text()='Continue to NetBanking'])[2]")))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//a[text()='Continue to NetBanking'])[2]")))).click();
 		  driver.findElement(By.xpath("(//a[text()='Continue to NetBanking'])[2]")).click();
+		 // driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[1]/a")).click();
 		  //Thread.sleep(6000);
 		  driver.close(); 
 		  
