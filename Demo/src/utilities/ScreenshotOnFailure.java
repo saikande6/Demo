@@ -58,7 +58,7 @@ WebDriver driver;
 					   Date dt=new Date();
 					   
 					   File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-					   FileUtils.copyFile(srcFile,new File("C:\\Users\\Ravi Kanth\\Desktop\\Screenshots123\\" +linkname+ "_" +dateFormat.format(dt)+".png"));
+					   FileUtils.copyFile(srcFile,new File("C:\\Users\\ramer\\Desktop\\Screenshots123\\" +linkname+ "_" +dateFormat.format(dt)+".png"));
 				   }
 				   
 				   //driver.navigate().back();
